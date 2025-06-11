@@ -9,25 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src='https://connect.facebook.net/en_US/fbevents.js';
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script');
-
-    fbq('init', '1382540949647246'); 
-    fbq('track', 'PageView');
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+  var _tmr = window._tmr || (window._tmr = []);
+  _tmr.push({id: "3658179", type: "pageView", start: (new Date()).getTime()});
+  (function (d, w, id) {
+    if (d.getElementById(id)) return;
+    var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+    ts.src = "https://top-fwz1.mail.ru/js/code.js";
+    var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+    if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+  })(document, window, "tmr-code");
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=558697003977909&ev=PageView&noscript=1"/>
+    <div>
+      <img src="https://top-fwz1.mail.ru/counter?id=3658179;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+    </div>
   </noscript>
-  <!-- End Meta Pixel Code -->
+  <!-- /Top.Mail.Ru counter -->
 </head>
 <body>
   <div class="container">
@@ -53,7 +52,7 @@
     </div>
   </div>
 
-  <!-- Pixel tracking with delay -->
+  <!-- Click tracking -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const whatsappBtn = document.getElementById('whatsapp-btn');
@@ -62,7 +61,6 @@
       if (whatsappBtn) {
         whatsappBtn.addEventListener('click', function (e) {
           e.preventDefault();
-          fbq('track', 'Contact', { content_name: 'WhatsApp' });
           setTimeout(() => {
             window.location.href = "https://wa.me/447871021159?text=Здравствуйте.%20Хочу%20участвовать%20в%20дополнительном%20наборе!";
           }, 300);
@@ -72,7 +70,6 @@
       if (telegramBtn) {
         telegramBtn.addEventListener('click', function (e) {
           e.preventDefault();
-          fbq('track', 'Contact', { content_name: 'Telegram' });
           setTimeout(() => {
             window.location.href = "https://t.me/arsen_jobs";
           }, 300);
